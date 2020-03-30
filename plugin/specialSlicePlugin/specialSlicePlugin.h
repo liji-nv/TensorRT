@@ -49,7 +49,7 @@ public:
 
     void terminate() override{};
 
-    void destroy() override{};
+    void destroy() override{ delete this; };
 
     size_t getWorkspaceSize(int) const override;
 
